@@ -1,35 +1,40 @@
 import com.educative.graphics.*;
 
-class Smiley {
-  public static void main(String[] args) {
-    Canvas c;
-    c = new Canvas(200, 200);
+class SmileyFactored {
+  static Canvas c;
 
     // Draw the outline of the face
+  public static void outline() {
     c.fill("yellow");
     c.stroke("black");
     c.circle(100, 100, 50);
-
-    // draw the mouth
+    }
+    
+  // draw the mouth
+  public static void drawMouth() {
+    c.stroke("black");
     c.fill("yellow");
-    c.stroke("black");
     c.circle(100, 100, 30);
-    
-    // cover the mouth
-    c.stroke("pink");
-    c.fill("orange");
-    c.rect(68, 75, 70, 35);
-
-
-    // draw the eyes
-    //left eye
-    c.fill("black");
+    c.stroke("yellow");
+    c.rect(68, 68, 62, 40);
+    }
+   
+  // draw the eyes
+  public static void drawEyes() {
     c.stroke("black");
-    c.circle(80, 90, 5);
-    
-    //right eye
     c.fill("black");
-    c.stroke("black");
-    c.circle(120, 90, 5);
-  }
+    c.circle(100 - 20, 100 - 10, 5);
+    c.circle(100 + 20, 100 - 10, 5);
+    }
+    
+    
+  public static void main(String[] args) {
+      c = new Canvas(200, 200);
+      
+      outline();
+      drawMouth();
+      drawEyes();
+      
+      c.draw();
+    }
 }
