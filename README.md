@@ -1,6 +1,126 @@
 # bookish-eureka
 
 A Repo of Java code to learn and understand the language.
+# Java Basics
+
+Java is a popular, versatile, and platform-independent programming language used for building a wide range of applications, from mobile apps to large-scale enterprise systems. It's known for its portability, performance, and robustness. Here's a brief introduction to some of the basics of Java, with code examples:
+
+### 1. Basics of Java Syntax:
+
+- **Class Definition**: In Java, everything is an object, and all code resides inside a class.
+
+  ```java
+  public class Main {
+      // code goes here
+  }
+  ```
+
+- **The `main` Method**: Any application must have a `main` method as the entry point.
+
+  ```java
+  public static void main(String[] args) {
+      System.out.println("Hello, World!");
+  }
+  ```
+
+- **Case Sensitivity**: Java is case-sensitive, meaning that `Hello` and `hello` are different identifiers.
+
+### 2. Data Types and Variables:
+
+- **Primitive Data Types**: Java has eight primitive data types (e.g., `int`, `double`, `boolean`).
+
+  ```java
+  int myNum = 5;               // Integer (whole number)
+  float myFloatNum = 5.99f;    // Floating point number
+  char myLetter = 'D';         // Character
+  boolean myBool = true;       // Boolean
+  String myText = "Hello";     // String (not a primitive data type)
+  ```
+
+### 3. Control Structures:
+
+- **If-Else Statement**:
+
+  ```java
+  if (20 > 18) {
+      System.out.println("20 is greater than 18");
+  } else {
+      System.out.println("18 is greater than 20");
+  }
+  ```
+
+- **Loops (for, while, do-while)**:
+
+  ```java
+  // for loop
+  for (int i = 0; i < 5; i++) {
+      System.out.println(i);
+  }
+
+  // while loop
+  int i = 0;
+  while (i < 5) {
+      System.out.println(i);
+      i++;
+  }
+
+  // do-while loop
+  int i = 0;
+  do {
+      System.out.println(i);
+      i++;
+  } while (i < 5);
+  ```
+
+### 4. Methods:
+
+- **Method Definition**: A method is a collection of statements that are grouped together to perform an operation.
+
+  ```java
+  public static int sum(int a, int b) {
+      return a + b;
+  }
+
+  public static void main(String[] args) {
+      int result = sum(5, 10);
+      System.out.println("The sum is: " + result);
+  }
+  ```
+
+### 5. Object-Oriented Programming (OOP) Principles:
+
+Java is an OOP language, meaning it's based on concepts like Classes, Objects, Inheritance, Polymorphism, Abstraction, and Encapsulation.
+
+- **Class and Objects**:
+
+  ```java
+  public class Car {
+      // Attributes
+      int modelYear;
+      String modelName;
+
+      // Constructor
+      public Car(int year, String name) {
+          modelYear = year;
+          modelName = name;
+      }
+
+      // Method
+      public void display() {
+          System.out.println("Model Year: " + modelYear);
+          System.out.println("Model Name: " + modelName);
+      }
+  }
+
+  public class Main {
+      public static void main(String[] args) {
+          Car myCar = new Car(1969, "Mustang");
+          myCar.display();
+      }
+  }
+  ```
+
+This is a high-level overview and there's a lot more to Java. But these basics should help you get started with understanding how Java works and how to write simple programs.
 
 ## SmileyFace
 
@@ -32,3 +152,4 @@ I replicated the functionality with JavaScript with ChatGPT and the Canvas API. 
 For smileyFace.js, it requires the canvas module to be installed.
 
 There are two approaches to drawing the smiley face with JavaScript.
+
